@@ -1,0 +1,50 @@
+/*!*************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!
+  \*************************************************************************************************************************************/
+h1 {
+  text-align: center;
+}
+body {
+    background-color: rgb(233, 157, 80);
+    width: 1600px;
+    height: 800px;
+}
+
+#egg {
+  width: 200px;
+  height: 200px;
+}
+
+#egg-box {
+  /* position: fixed; */
+  border: 1px solid black;
+  width: 198px;
+  height: 498px;
+}
+
+#myinfo-box {
+  position: fixed;
+  right: 0;
+  border: 1px solid blue;
+  width: 198px;
+  height: 498px;
+}
+
+#chart-box {
+  display: center;
+  width: 1122px;
+}
+
+#nav-bar {
+  position:fixed;
+  display: center;
+  width: 1122px;
+  height: 20px;
+}
+
+main_context {
+  display: flex;
+  border: 1px solid white;
+  width: 1598px;
+  height: 498px;
+}

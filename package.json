@@ -1,0 +1,40 @@
+{
+  "name": "The-Golden-Basket",
+  "version": "1.0.0",
+  "description": "The Golden Eggsket is a data visualization/interactive demo that introduces the concept of diversification and opportunity cost. User will have different data manipulations options such as sectors and time ranges.",
+  "main": "webpack.config.js",
+  "browserslist": [
+    "defaults"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch --mode=development",
+    "build": "webpack --mode=production",
+    "start": "node start.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndyAYu/The-Golden-Basket.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndyAYu/The-Golden-Basket/issues"
+  },
+  "homepage": "https://github.com/AndyAYu/The-Golden-Basket#readme",
+  "dependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "babel-loader": "^8.2.3",
+    "chart.js": "^3.6.1",
+    "core-js": "^3.19.2",
+    "css-loader": "^6.5.1",
+    "mini-css-extract-plugin": "^2.4.5",
+    "regenerator-runtime": "^0.13.9",
+    "sass": "^1.44.0",
+    "sass-loader": "^12.3.0",
+    "webpack": "^5.64.4",
+    "webpack-cli": "^4.9.1"
+  }
+}
