@@ -21,14 +21,14 @@ body {
   width: 198px;
   height: 498px;
 }
-
+/* 
 #myinfo-box {
   position: fixed;
   right: 0;
   border: 1px solid blue;
   width: 198px;
   height: 498px;
-}
+} */
 
 #chart-box {
   display: center;
