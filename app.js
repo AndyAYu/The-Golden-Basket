@@ -71941,7 +71941,7 @@ let myChart = new Chart(ctx, {
         datasets: [{
             label: VOO.meta.name,
             data: closeV,
-            backgroundColor: color = random_bg_color(),
+            backgroundColor: color = fillPattern,
             borderColor: color,
         }]
     },
