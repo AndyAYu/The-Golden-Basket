@@ -44,7 +44,14 @@ body {
 
 main_context {
   display: flex;
-  border: 1px solid white;
   width: 1598px;
   height: 498px;
+}
+
+#gen_egg {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  opacity: 0.5;
+  background:rgb(233, 157, 80)
 }

@@ -6083,22 +6083,81 @@ let TSLA = {
 }
 
 
-let eggs = [AAPL, TSLA, GOOGL]
+let tickers = ["AAPL", "TSLA", "FB", "AMD"]
 
-function randomEgg () {
-    return eggs.pop(eggs[Math.floor(Math.random() * eggs.length)]);
+function randomticker() {
+    return tickers.pop(tickers[Math.floor(Math.random() * tickers.length)]);
 }
-let ticker = randomEgg()
+
+function random_bg_color() {
+    var x = Math.floor(Math.random() * 256);
+    var y = Math.floor(Math.random() * 256);
+    var z = Math.floor(Math.random() * 256);
+    var bgColor = "rgb(" + x + "," + y + "," + z + ")";
+    return bgColor;
+}
+
+const dates = AAPL.data.map((p) => p.date.slice(0, 10)).reverse()
+let ctx = document.getElementById('myChart')
+let myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: dates,
+        datasets: [{
+            label: [],
+            data: [],
+            backgroundColor: color = random_bg_color(),
+            borderColor: color,
+        }]
+    },
+    options: {
+        plugins: {
+            legend: {
+                display: false
+            }
+        },
+        transitions: {
+            active: {
+                animation: {
+                    duration: 400
+                }
+            },
+            show: {
+                animations: {
+                    
+                    x: {
+                        from: 0
+                    },
+                    y: {
+                        from: 0
+                    }
+                }
+            },
+            hide: {
+                animations: {
+                    x: {
+                        to: 0
+                    },
+                    y: {
+                        to: 0
+                    }
+                }
+            }
+        }
+    }
+})
+
 
 
 let gen_egg = document.createElement("button");
 gen_egg.innerHTML = "Generate Egg";
-// gen_egg.onclick = function () {
-//     fetch(`https://api.stockdata.org/v1/data/eod?symbols=${ticker}&api_token=xqBXpmR7pKuoaW8Dam5EVV3rJRovf8wUJoAzsCq8`)
-//         .then(response => response.json())
-//         .then(data => graphdata(data));
 gen_egg.onclick = function () {
-    return graphdata(ticker)
+    let ticker = randomticker();
+    fetch(`https://api.stockdata.org/v1/data/eod?symbols=${ticker}&api_token=xqBXpmR7pKuoaW8Dam5EVV3rJRovf8wUJoAzsCq8`)
+        .then(response => response.json())
+        .then(data => graphdata(data));
+// gen_egg.onclick = function () {
+//         return graphdata(randomEgg())
 }
 
 document.body.appendChild(gen_egg);
@@ -6113,52 +6172,20 @@ document.body.appendChild(gen_basket);
 
 
 function graphdata(obj) {
-    const closeValues = obj.data.map((p) => p.close).reverse()
-    const dates = obj.data.map((p) => p.date.slice(0,10)).reverse()
+    // const closeValues = obj.data.map((p) => p.close).reverse()
+    // const dates = obj.data.map((p) => p.date.slice(0,10)).reverse()
 
-    function random_bg_color() {
-        var x = Math.floor(Math.random() * 256);
-        var y = Math.floor(Math.random() * 256);
-        var z = Math.floor(Math.random() * 256);
-        var bgColor = "rgb(" + x + "," + y + "," + z + ")";
-        return bgColor;
-    }
     
-    const ctx = document.getElementById('myChart')
-    const myChart = new Chart(ctx, {
-        type: 'line',
-        data: {
-            labels: dates,
-            datasets: [{
-                label: `${obj.meta.ticker}`,
-                data: closeValues,
-                backgroundColor: color = random_bg_color(),
-                borderColor: color,
-            }]
-        },
-        options: {
-            transitions: {
-                show: {
-                    animations: {
-                        x: {
-                            from: 0
-                        },
-                        y: {
-                            from: 0
-                        }
-                    }
-                },
-                hide: {
-                    animations: {
-                        x: {
-                            to: 0
-                        },
-                        y: {
-                            to: 0
-                        }
-                    }
-                }
-            }
-        }
+    
+    
+    const closeValues = obj.data.map((p) => p.close).reverse()
+    myChart.data.datasets.push({
+        label: obj.meta.ticker,
+        data: closeValues,
+        backgroundColor: color = random_bg_color(),
+        borderColor: color,
+        
     });
+    myChart.options.plugins.legend.display = true;
+    myChart.update();
 }
