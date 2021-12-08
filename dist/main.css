@@ -4,22 +4,11 @@
 h1 {
   text-align: center;
 }
-body {
+/* body {
     width: 1600px;
     height: 800px;
-}
-
-#egg {
-  width: 200px;
-  height: 200px;
-}
-
-/* #egg-box { 
-  position: fixed;
-  border: 1px solid black;
-  width: 200px;
-  height: 200px;
 } */
+
 /* 
 #myinfo-box {
   position: fixed;
@@ -30,32 +19,31 @@ body {
 } */
 
 #chart-box {
+  margin-left: 250px;
   flex-direction:column;
   width: 1000px;
 }
 
-#nav-bar {
+/* #nav-bar {
   position:fixed;
   display: center;
   width: 1122px;
   height: 20px;
-}
+} */
 
-main_context {
+/* main_context {
   display: flex;
-  width: 1598px;
+  width: 1200px;
   height: 498px;
-}
+} */
 
 #gen_egg {
-  display: flex;
   width: 100px;
   height: 100px;
   opacity: 0.75;
   padding: 10px;
 }
 #gen_basket {
-  display: flex;
   width: 100px;
   height: 100px;
   opacity: .75;
