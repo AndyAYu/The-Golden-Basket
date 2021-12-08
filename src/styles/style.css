@@ -1,0 +1,26 @@
+h1 {
+  text-align: center;
+}
+
+#myChart {
+  width: 1200px;
+}
+
+#chart-box {
+  display: flex;
+  margin-left: 250px;
+  width: 1000px;
+}
+
+#gen_egg {
+  width: 100px;
+  height: 100px;
+  opacity: 0.75;
+  padding: 10px;
+}
+#gen_basket {
+  width: 100px;
+  height: 100px;
+  opacity: .75;
+  padding: 10px;
+}

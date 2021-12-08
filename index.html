@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./dist/main.css">
+    <link rel="stylesheet" type="text/css" href="./src/styles/style.css">
     <!-- <script src="./dist/main.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js" ></script>
     <!-- <script  type="text/javascript" src="./dummy_data/aapl.json"></script> -->
-    <script src="app.js" defer></script>
+    <script src="./dist/main.js" defer></script>
     <title>The Golden Basket</title>
 </head>
 <body>
@@ -22,19 +22,21 @@
             <button id="five-months" type="button" >5 months</button>
             <button id="one-year" type="button" >1 year</button>
             <!-- <button id="two-years" type="button" >2 years</button> -->
-        </nav>
-        <div>
-            <canvas id="myChart" style="display: block;box-sizing: border-box;">
-            <div id="egg-box">
+        <div id="egg-box">
             <button id="gen_egg"><img src="./assets/images/egg-svg.svg" alt="generate egg"></button>
             <button id="gen_basket"><img src="./assets/images/basket.svg" alt="generate basket"></button>
             </div>
+        </nav>
+        <div>
+            <canvas id="myChart" style="display: block;box-sizing: border-box;">
+            
             </canvas>
         </div>
     </div>
     <div id="myinfo-box"></div>
 </main_context>
-    <div id="generated-box">
+    <div id="prompt">
+        <canvas id="eggInfo" width="500" height="60"></canvas>
     </div>
     
 
@@ -51,5 +53,6 @@
     <input type="image" class="stocks" src="https://logo.clearbit.com/alibaba.com" value="BABA">
 </div> -->
 </div>
+
 </body>
 </html>
