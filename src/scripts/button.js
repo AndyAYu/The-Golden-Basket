@@ -3945,8 +3945,8 @@ const setEventHandlers = function() {
             datasets: [{
                 label: VOO.meta.name,
                 data: closeV,
-                backgroundColor: "rgb(179, 142, 21)",
-                borderColor: "rgb(179, 142, 21)",
+                backgroundColor: "rgb(210, 180, 140)",
+                borderColor: "rgb(210, 180, 140)",
                 pointRadius: 1,
                 pointHoverRadius: 1
             }]

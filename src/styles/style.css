@@ -1,15 +1,54 @@
+.splash{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgb(231, 198, 137);
+  z-index: 200;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  line-height: 98vh;
+}
+.splash.display-none{
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgb(231, 198, 137);
+  z-index: -10;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  line-height: 98vh;
+  transition: all 3s;
+}
+
+@keyframes fadeIn {
+  to{
+    opacity: 1;
+  }
+}
+
+.fade-in{
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+}
+
 h1 {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
 }
 
-#myChart {
-  width: 1200px;
+h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
 }
 
-#chart-box {
-  display: flex;
-  margin-left: 250px;
-  width: 1000px;
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
 }
 
 #gen_egg {
@@ -23,4 +62,21 @@ h1 {
   height: 100px;
   opacity: .75;
   padding: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.prompt {
+  text-align: center;
+}
+
+#egg-box{
+  display:flex;
+  justify-content: center;
 }
