@@ -1,4 +1,4 @@
-# The-Golden-Basket
+<img src="assets/images/Logo.png" width=360 height=100>
 
 [The Golden Basket](https://andyayu.github.io/The-Golden-Basket/) is a data visualization/interactive demo that introduces
 the concept of diversification and opportunity cost. User will have different
