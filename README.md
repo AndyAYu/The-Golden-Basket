@@ -1,6 +1,6 @@
 # The-Golden-Basket
 
-The Golden Eggsket is a data visualization/interactive demo that introduces
+The Golden Basket is a data visualization/interactive demo that introduces
 the concept of diversification and opportunity cost. User will have different
 data manipulations options such as sectors and time ranges.
 
