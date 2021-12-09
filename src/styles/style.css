@@ -56,6 +56,7 @@ p {
   height: 100px;
   opacity: 0.75;
   padding: 10px;
+  margin-left: 28%;
 }
 #gen_basket {
   width: 100px;
@@ -78,6 +79,7 @@ p {
 
 #egg-box{
   display:flex;
+  position: absolute;
   justify-content: center;
 }
 
@@ -85,6 +87,10 @@ p {
   font-style: italic;
   font-size: 4;
   text-align: center;
+}
+
+#nav-bar {
+  position:absolute;
 }
 
 h2 > p {

@@ -1,6 +1,6 @@
 # The-Golden-Basket
 
-The Golden Basket is a data visualization/interactive demo that introduces
+[The Golden Basket](https://andyayu.github.io/The-Golden-Basket/) is a data visualization/interactive demo that introduces
 the concept of diversification and opportunity cost. User will have different
 data manipulations options such as sectors and time ranges.
 
@@ -17,8 +17,16 @@ Bonus Feature:
     -cryptoegg
     -email user- bakset/egg info
 
-# Wireframe
-<img src="assets/images/wire_frame.png" width=1000>
+# Feature
+
+Generate many stocks 
+
+<img src="assets/images/chart_basket.png" width=1400 height=900>
+
+
+buttons
+
+<img src="assets/images/egg_basket.png" width=200 height=100>
 
 
 # Technologies
