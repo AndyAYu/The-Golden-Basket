@@ -6,12 +6,11 @@ data manipulations options such as sectors and time ranges.
 
 # MVP 
 1.Users will be able to generate a random Egg(stock) until 5 eggs
-    or random basket(5 stocks)that compares to the sp500 nasdaq and dowjones.
+    or random basket(5 stocks)that compares to the Vanguard s&p500 ETF.
 
-2.Graph will dynamically plot generated each egg's individual performance.
-    basket will have 
+2.Graph will dynamically plot performance of generated egg or basket individual performance.
     
-3.Users will have filter options for their egg: -sector, -performance(%)
+3.Users will have filter options for dates.
 
 Bonus Feature: 
     -compare to other stocks or other mutual funds.
@@ -23,7 +22,7 @@ Bonus Feature:
 
 
 # Technologies
-CSS, Javascript, D3 library, Canvas API
+CSS, Javascript, Chart JS, Canvas
 
 # Implementation timeline
 
