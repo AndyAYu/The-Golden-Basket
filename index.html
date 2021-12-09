@@ -5,9 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./src/styles/style.css">
-    <!-- <script src="./dist/main.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js" ></script>
-    <!-- <script  type="text/javascript" src="./dummy_data/aapl.json"></script> -->
     <script src="./dist/main.js" defer></script>
     <title>The Golden Basket</title>
 </head>
@@ -24,15 +22,20 @@
     <div id="chart-box">
         <h2>Welcome!</h2>
             <p>Not sure where to invest next? Have no fear! The generator will help you choose your next golden egg</p>
-        <div class="container">  
-            <nav id="nav-bar">
-        <button id="one-month" type="button">1 month</button>
-        <button id="three-months" type="button">3 months</button>
-        <button id="five-months" type="button">5 months</button>
-        <button id="one-year" type="button">1 year</button>
-            </nav>
-            <canvas id="myChart" ></canvas>
-        </div>
+            <p>In the graph below, contains a popular Index Fund, Vanguard 500 Index Fund ETF, for performance comparison</p>
+            <div id="disclaimer">
+            Disclaimer: This is not financial advice. Past performance is not indicative of future results
+            </div>
+            
+        <nav id="nav-bar">
+            <button id="one-month" type="button">1 month</button>
+            <button id="three-months" type="button">3 months</button>
+            <button id="five-months" type="button">5 months</button>
+            <button id="one-year" type="button">1 year</button>
+        </nav>
+            <div class="container">  
+                <canvas id="myChart" ></canvas>
+            </div>
     </div>
   
     <div id="egg-box">

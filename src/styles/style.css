@@ -22,7 +22,7 @@
   color: rgb(255, 255, 255);
   text-align: center;
   line-height: 98vh;
-  transition: all 3s;
+  transition: all 2.5s;
 }
 
 @keyframes fadeIn {
@@ -79,4 +79,14 @@ p {
 #egg-box{
   display:flex;
   justify-content: center;
+}
+
+#disclaimer {
+  font-style: italic;
+  font-size: 4;
+  text-align: center;
+}
+
+h2 > p {
+  font-family:Verdana, Geneva, Tahoma, sans-serif
 }
