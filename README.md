@@ -21,7 +21,7 @@ Bonus Feature:
 
 Generate many stocks 
 
-<img src="assets/images/chart_basket.png" width=1400 height=900>
+<img src="assets/images/Chart Basket.png" width=1400 height=900>
 
 
 buttons
