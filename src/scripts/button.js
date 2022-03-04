@@ -3995,13 +3995,12 @@ const setEventHandlers = function() {
 
     let oneMonth = document.getElementById("one-month")
     oneMonth.onclick = function () {
-        // let monthChart = myChart.config._config.data.datasets[0].data ;
-        // monthChart = 
         myChart.config._config.data.datasets[0].data.slice(-30);
         myChart.config._config.data.labels = myChart.config._config.data.labels.slice(-30)
         myChart.update()
     };
     document.body.appendChild(oneMonth);
+
     let threeMonths = document.getElementById("three-months")
     threeMonths.onclick = function () {
         myChart.config._config.data.datasets[0].data = myChart.config._config.data.datasets[0].data.slice(-90)
@@ -4009,6 +4008,7 @@ const setEventHandlers = function() {
         myChart.update()
     };
     document.body.appendChild(threeMonths);
+
     let fiveMonths = document.getElementById("five-months")
     fiveMonths.onclick = function () {
         myChart.config._config.data.datasets[0].data = myChart.config._config.data.datasets[0].data.slice(-150)
@@ -4016,6 +4016,7 @@ const setEventHandlers = function() {
         myChart.update()
     };
     document.body.appendChild(fiveMonths);
+
     let oneYear = document.getElementById("one-year")
     oneYear.onclick = function () {
         myChart.config._config.data.datasets[0].data = myChart.config._config.data.datasets[0].data.slice(-365)
