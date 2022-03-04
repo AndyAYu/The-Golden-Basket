@@ -55,9 +55,9 @@ p {
   width: 100px;
   height: 100px;
   opacity: 0.75;
-  padding: 10px;
-  margin-left: 28%;
+  padding: 10px; 
 }
+
 #gen_basket {
   width: 100px;
   height: 100px;
@@ -66,21 +66,12 @@ p {
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  width: 80%;
   margin-left: 10%;
   margin-right: 10%;
 }
 
 .prompt {
   text-align: center;
-}
-
-#egg-box{
-  display:flex;
-  position: absolute;
-  justify-content: center;
 }
 
 #disclaimer {

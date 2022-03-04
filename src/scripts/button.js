@@ -4032,15 +4032,12 @@ const setEventHandlers = function() {
         fetch(`https://api.stockdata.org/v1/data/eod?symbols=${ticker}&api_token=A1XKWwqhgK9buVscW4tWdd4gdU2aJcGf09Dul1wo&date_from=2020`)
             .then(response => response.json())
             .then(data => graphdata(data));
-        // gen_egg.onclick = function () {
-        //         return graphdata(randomEgg())
     }
     document.body.appendChild(gen_egg);
 
 
     let gen_basket = document.getElementById("gen_basket");
     gen_basket.onclick = function () {
-        // return graphBasket(basketTickers);
         let times = 4;
         for (let i = 0; i < times; i++) {
             let ticker = randomticker();
@@ -4052,10 +4049,6 @@ const setEventHandlers = function() {
     document.body.appendChild(gen_basket);
 
     function graphdata(obj) {
-        // const closeValues = obj.data.map((p) => p.close).reverse()
-        // const dates = obj.data.map((p) => p.date.slice(0,10)).reverse()
-
-
 
         let  color = random_bg_color();
         let closeValues = obj.data.map((p) => p.close).reverse();

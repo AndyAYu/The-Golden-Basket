@@ -4,21 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="https://www.svgrepo.com/show/98160/egg.svg">
-    <link rel="stylesheet" type="text/css" href="./src/styles/style.css">
+    <link rel="icon" href="https://www.svgrepo.com/show/27764/basket.svg">
+    <link rel="stylesheet" href="./src/styles/reset.scss"/>
+    <link rel="stylesheet" type="text/css" href="./src/styles/style.css"/>
     <script src="https://cdn.jsdelivr.net/npm/chart.js" ></script>
     <script src="./dist/main.js" defer></script>
     <title>The Golden Basket</title>
 </head>
 <body>
-
     <div class="splash">
         <h1 class="fade-in">The Golden Basket</h1>
     </div>
-
-
     <h1 id="title">The Golden Basket</h1>
-
     <div>
             <h2>Welcome!</h2>
             <p>Not sure where to invest next? Have no fear! The generator will help you choose your next golden egg or basket</p>
@@ -26,8 +23,6 @@
             <div id="disclaimer">
                 Disclaimer: This is not financial advice. Past performance is not indicative of future results
             </div>
-            
-            
             <div class="container">  
                 <canvas id="myChart" ></canvas>
                     <button id="one-month" type="button">1 month</button>
@@ -39,12 +34,6 @@
                 <button id="gen_egg"><img src="./assets/images/egg-svg.svg" alt="generate egg"></button>
                 <button id="gen_basket"><img src="./assets/images/basket.svg" alt="generate basket"></button>
             </div>
-            <div id="myinfo-box"></div>
-        <div class="prompt">
-            <canvas id="eggInfo" width="500" height="60"></canvas>
-        </div>
-</div>
-</div>
-
+    </div>
 </body>
 </html>
