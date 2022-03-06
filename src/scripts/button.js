@@ -4067,6 +4067,4 @@ const setEventHandlers = function() {
 
 
 }
-
-
 export default setEventHandlers;
