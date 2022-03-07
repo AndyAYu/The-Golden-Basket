@@ -4064,7 +4064,5 @@ const setEventHandlers = function() {
         myChart.options.plugins.legend.display = true;
         myChart.update();
     }
-
-
 }
 export default setEventHandlers;
