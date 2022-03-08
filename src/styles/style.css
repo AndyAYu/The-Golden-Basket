@@ -69,21 +69,3 @@ p {
   margin-left: 10%;
   margin-right: 10%;
 }
-
-.prompt {
-  text-align: center;
-}
-
-#disclaimer {
-  font-style: italic;
-  font-size: 4;
-  text-align: center;
-}
-
-#nav-bar {
-  position:absolute;
-}
-
-h2 > p {
-  font-family:Verdana, Geneva, Tahoma, sans-serif
-}
