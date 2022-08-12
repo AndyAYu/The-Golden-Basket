@@ -4028,6 +4028,7 @@ const setEventHandlers = function() {
 
     let gen_egg = document.getElementById("gen_egg");
     gen_egg.onclick = function () {
+        debugger
         let ticker = randomticker();
         fetch(`https://api.stockdata.org/v1/data/eod?symbols=${ticker}&api_token=A1XKWwqhgK9buVscW4tWdd4gdU2aJcGf09Dul1wo&date_from=2020`)
             .then(response => response.json())

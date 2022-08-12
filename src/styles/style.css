@@ -7,7 +7,7 @@
   text-align: center;
 }
 
-/* .splash{
+.splash{
   position: fixed;
   top: 0;
   left: 0;
@@ -18,8 +18,9 @@
   color: rgb(255, 255, 255);
   text-align: center;
   line-height: 98vh;
-} */
-/* .splash.display-none{
+} 
+
+.splash.display-none{
   position: fixed;
   opacity: 0;
   top: 0;
@@ -32,7 +33,7 @@
   text-align: center;
   line-height: 98vh;
   transition: all 2.5s;
-} */
+}
 
 @keyframes fadeIn {
   to{
@@ -64,14 +65,12 @@ p {
   width: 120px;
   height: 120px;
   opacity: 0.75;
-  padding: 10px; 
 }
 
 #gen_basket {
   width: 120px;
   height: 120px;
   opacity: .75;
-  padding: 10px;
 }
 
 .container {
