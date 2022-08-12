@@ -1,3 +1,12 @@
+.body {
+  width:auto;
+  height: auto;
+}
+
+#disclaimer{
+  text-align: center;
+}
+
 .splash{
   position: fixed;
   top: 0;
@@ -52,15 +61,15 @@ p {
 }
 
 #gen_egg {
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   opacity: 0.75;
   padding: 10px; 
 }
 
 #gen_basket {
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   opacity: .75;
   padding: 10px;
 }
@@ -68,4 +77,5 @@ p {
 .container {
   margin-left: 10%;
   margin-right: 10%;
+  z-index: -1;
 }

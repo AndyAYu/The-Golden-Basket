@@ -5,35 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="https://www.svgrepo.com/show/27764/basket.svg">
-    <link rel="stylesheet" href="./src/styles/reset.scss"/>
+    <link rel="stylesheet" type="text/css" href="./src/styles/reset.scss">
+    <link rel="stylesheet" href="./src/styles/scss"/>
     <link rel="stylesheet" type="text/css" href="./src/styles/style.css"/>
     <script src="https://cdn.jsdelivr.net/npm/chart.js" ></script>
     <script src="./dist/main.js" defer></script>
     <title>The Golden Basket</title>
 </head>
 <body>
-    <div class="splash">
-        <h1 class="fade-in">The Golden Basket</h1>
+    <div>
+        <div class="splash">
+            <h1 class="fade-in">The Golden Basket</h1>
+        </div>
+
+        <h1 id="title">The Golden Basket</h1>
+
+        <h2>Welcome!</h2>
+
+        <p>Not sure where to invest next? Have no fear! The generator will help you choose your next golden egg or basket</p>
+        <p>The graph below contains a popular Index Fund, Vanguard 500 Index Fund ETF, for performance comparison</p>
+        <div id="disclaimer">
+            Disclaimer: This is not financial advice. Past performance is not indicative of future results
+        </div>
+        <div class="container">  
+            <canvas id="myChart" style="border:1px solid #000000;z-index:1" >
+            </canvas>
+        </div>
+
+        <div class="date-buttons">
+            <input id="one-month"  style="z-index:2; position:absolute; top:x; left:y"type="button">1 month</input>
+            <!-- <button id="three-months" type="button">3 months</button>
+            <button id="five-months" type="button">5 months</button>
+            <button id="one-year" type="button">1 year</button> -->
+        </div>
     </div>
-    <h1 id="title">The Golden Basket</h1>
-            <h2>Welcome!</h2>
-            <p>Not sure where to invest next? Have no fear! The generator will help you choose your next golden egg or basket</p>
-            <p>The graph below contains a popular Index Fund, Vanguard 500 Index Fund ETF, for performance comparison</p>
-            <div id="disclaimer">
-                Disclaimer: This is not financial advice. Past performance is not indicative of future results
-            </div>
-            <div class="container">  
-                <canvas id="myChart" ></canvas>
-            </div>
-            <div class="date-box">
-                <button id="one-month" type="button">1 month</button>
-                <button id="three-months" type="button">3 months</button>
-                <button id="five-months" type="button">5 months</button>
-                <button id="one-year" type="button">1 year</button>
-            </div>
-            <div class="egg-box">
-                <button id="gen_egg"><img src="./assets/images/egg-svg.svg" alt="generate egg">egg</button>
-                <button id="gen_basket"><img src="./assets/images/basket.svg" alt="generate basket">basket</button>
-            </div>
+    <!-- <div class="date-box">
+        <div>
+        
+        </div> 
+    </div>
+    <div class="egg-box">
+        <button id="gen_egg"><img src="./assets/images/egg-svg.svg" alt="generate egg">egg</button>
+        <button id="gen_basket"><img src="./assets/images/basket.svg" alt="generate basket">basket</button>
+    </div> -->
 </body>
 </html>
