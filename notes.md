@@ -1,0 +1,1 @@
+documentgetbyId somehow makes the buttons lose it's css

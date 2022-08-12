@@ -1,13 +1,13 @@
-.body {
-  width:auto;
-  height: auto;
+.body{
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 #disclaimer{
   text-align: center;
 }
 
-.splash{
+/* .splash{
   position: fixed;
   top: 0;
   left: 0;
@@ -18,8 +18,8 @@
   color: rgb(255, 255, 255);
   text-align: center;
   line-height: 98vh;
-}
-.splash.display-none{
+} */
+/* .splash.display-none{
   position: fixed;
   opacity: 0;
   top: 0;
@@ -32,7 +32,7 @@
   text-align: center;
   line-height: 98vh;
   transition: all 2.5s;
-}
+} */
 
 @keyframes fadeIn {
   to{
@@ -75,7 +75,13 @@ p {
 }
 
 .container {
-  margin-left: 10%;
-  margin-right: 10%;
   z-index: -1;
+  padding-top:30px;
+  padding-bottom:30px;
+}
+
+.date-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
