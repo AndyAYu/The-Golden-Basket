@@ -1,4 +1,4 @@
-import setEventHandlers from "./scripts/button"
+import setEventHandlers from "./scripts/main"
 
 const splash = document.querySelector('.splash')
 

@@ -3935,9 +3935,9 @@ const setEventHandlers = function() {
         var bgColor = "rgb(" + x + "," + y + "," + z + ")";
         return bgColor;
     }
-    const closeV = VOO.data.map((cv) => cv.close).reverse()
-    const dates = VOO.data.map((p) => p.date.slice(0, 10)).reverse()
-    let ctx = document.getElementById('myChart')
+    let closeV = VOO.data.map((cv) => cv.close).reverse()
+    let dates = VOO.data.map((p) => p.date.slice(0, 10)).reverse()
+    const ctx = document.getElementById('myChart')
     let myChart = new Chart(ctx, {
         type: 'line',
         data: {
@@ -3997,7 +3997,6 @@ const setEventHandlers = function() {
     oneMonth.onclick = function () {
         myChart.config._config.data.datasets[0].data.slice(-30);
         myChart.config._config.data.labels = myChart.config._config.data.labels.slice(-30)
-        myChart.update()
     };
     document.body.appendChild(oneMonth);
 
@@ -4028,7 +4027,6 @@ const setEventHandlers = function() {
 
     let gen_egg = document.getElementById("gen_egg");
     gen_egg.onclick = function () {
-        debugger
         let ticker = randomticker();
         fetch(`https://api.stockdata.org/v1/data/eod?symbols=${ticker}&api_token=A1XKWwqhgK9buVscW4tWdd4gdU2aJcGf09Dul1wo&date_from=2020`)
             .then(response => response.json())
@@ -4050,7 +4048,6 @@ const setEventHandlers = function() {
     document.body.appendChild(gen_basket);
 
     function graphdata(obj) {
-
         let  color = random_bg_color();
         let closeValues = obj.data.map((p) => p.close).reverse();
         myChart.data.datasets.push({
@@ -4060,7 +4057,6 @@ const setEventHandlers = function() {
             borderColor: color,
             pointRadius: 1,
             pointHoverRadius: 1
-
         });
         myChart.options.plugins.legend.display = true;
         myChart.update();
